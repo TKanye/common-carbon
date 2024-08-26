@@ -6,7 +6,7 @@ This package is reference from Package Carbon[https://carbon.nesbot.com](https:/
 ```php
 <?php
 
-use Carbon\Carbon;
+use utils\Carbon\Carbon;
 
 printf("Right now is %s", Carbon::now()->toDateTimeString());
 printf("Right now in Vancouver is %s", Carbon::now('America/Vancouver'));  //implicit __toString()
@@ -59,13 +59,13 @@ Carbon::createFromTimestamp(0)->diffInDays($internetWillBlowUpOn); // 24855.1348
 ### With Composer
 
 ```
-$ composer require tkanye/carbon
+$ composer require tkanye/common-carbon
 ```
 
 ```json
 {
     "require": {
-        "tkanye/carbon": "^1"
+        "tkanye/common-carbon": "^1"
     }
 }
 ```
@@ -74,7 +74,7 @@ $ composer require tkanye/carbon
 <?php
 require 'vendor/autoload.php';
 
-use Carbon\Carbon;
+use utils\Carbon\Carbon;
 
 printf("Now: %s", Carbon::now());
 ```
@@ -87,7 +87,7 @@ Why are you not using [composer](https://getcomposer.org/)? Download the Carbon 
 <?php
 require 'path-to-Carbon-directory/autoload.php';
 
-use Carbon\Carbon;
+use utils\Carbon\Carbon;
 
 printf("Now: %s", Carbon::now());
 ```
