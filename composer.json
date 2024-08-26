@@ -1,5 +1,5 @@
 {
-    "name": "TKanye/common-carbon",
+    "name": "tkanye/common-carbon",
     "description": "An API extension for DateTime that supports 122 different languages, reference from nesbot Carbon",
     "license": "MIT",
     "type": "library",
